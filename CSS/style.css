@@ -2,92 +2,318 @@
   margin: 0;
   padding: 0;
 }
-#wrapper {
-    background-color: rgb(248, 249, 249);
-  }
-main{
-    padding-top: 150px;
-}
-@media (min-width:700px) {
-      
-      #header {
-        height: 100px;
-        line-height: 100px;
-        color: lightgray;
-        background-color: rgb(52, 73, 94);
-        font-family: sans-serif, Verdana, Geneva, Tahoma, sans-serif;
-        position: fixed;
-        display: flex;
-        width: 100%;
-        box-shadow: 0px 0px 15px 1px black;
-        justify-content: space-between;
-      }
-      
-      #titulo-header {
-        margin-left: 20px;
-      }
-      
-      #nav ul {
-        list-style: none;
-        display: flex;
-        justify-content: space-evenly;
-        text-decoration: none;
-        gap: 30px;
-      }
-      #nav-ul {
-        margin-right: 20px;
-      }
-      
-      .a-menu,
-      .a-menu::before,
-      a.a-menu::selection {
-        color: lightgray;
-        text-decoration: none;
-      }
-      a:hover {
-        color: white;
-      }
-      
+
+
+
+#main {
+  padding-top: 150px;
 }
 
-@media (max-width:699px){
-   
-      
-      #header {
-        color: lightgray;
-        background-color: rgb(52, 73, 94);
-        font-family: sans-serif, Verdana, Geneva, Tahoma, sans-serif;
-        position: fixed;
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        text-align: center;
-        box-shadow: 0px 0px 15px 1px black;
-        justify-content: space-between;
-      }
-      
-      #titulo-header {
-        margin-top: 15px;
-      }
-      
-      #nav ul {
-        list-style: none;
-        display: flex;
-        justify-content: space-evenly;
-        text-decoration: none;
-        gap: 30px;
-        margin-top:20px;
-        margin-bottom:16px;
-      }
-      
-      .a-menu,
-      .a-menu::before,
-      a.a-menu::selection {
-        color: lightgray;
-        text-decoration: none;
-      }
-      a:hover {
-        color: white;
-      }
-      
+@media (min-width:700px) {
+
+  #header {
+    height: 100px;
+    line-height: 100px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(52, 152, 219);
+    font-family: sans-serif, Verdana, Geneva, Tahoma, sans-serif;
+    position: fixed;
+    z-index: 100;
+    display: flex;
+    width: 100%;
+    box-shadow: 0px 0px 15px 1px black;
+    justify-content: space-between;
+
+  }
+
+  #titulo-header {
+    margin-left: 20px;
+  }
+
+  #nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    text-decoration: none;
+    gap: 30px;
+    backdrop-filter: none;
+  }
+
+  #nav-ul {
+    margin-right: 20px;
+  }
+
+  .a-menu,
+  .a-menu::before,
+  a.a-menu::selection {
+    color: rgb(231, 230, 230);
+    text-decoration: none;
+  }
+
+  .a-menu:hover {
+    color: white;
+  }
+
+  section {
+    font-family: arial;
+    margin-top: 5px;
+    margin-top: 50px;
+
+  }
+
+  #containerFondo {
+    background-image: url("/img/peakpx.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 0 10px 5px gray;
+  }
+
+  .blur {
+    background-color: rgba(52, 152, 219, 0.726);
+    padding: 40px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 3px 5px rgba(52, 152, 219, 0.726);
+  }
+
+  .articuloIntroduccion {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 50px 50px;
+    padding: 50px;
+    min-height: 300px;
+    backdrop-filter: blur(4px);
+  }
+
+
+  #tituloIntroduccion {
+    color: rgb(255, 255, 255);
+    margin-bottom: 40px;
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 3em;
+  }
+
+  #spanIntroduccion {
+    text-align: justify;
+    font-size: 1.5em;
+    color: white;
+  }
+
+
+
+  .cardsContainer {
+    margin-top: 150px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(247, 247, 247, 0.808);
+    box-shadow: 0px 0px 10px 5px lightgray;
+  }
+
+  .tituloTecnologias {
+    text-align: center;
+    margin-bottom: 150px;
+    margin-top: 50px;
+    font-size: 3em;
+    font-weight: 200;
+    color: rgb(52, 152, 219);
+  }
+
+  .tituloLenguajes{
+    text-align: center;
+    color: rgb(3, 4, 5);
+  }
+
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 40px 40px;
+  }
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 10px;
+    width: 30%;
+    max-width: 500px;
+    min-width: 300px;
+    box-shadow: 0px 0px 10px 0px gray;
+    padding: 10px;
+    gap: 30px;
+  }
+
+  .imagenTecnologias {
+    max-width: 500px;
+    border-bottom: 1px solid gray;
+    padding: 10px;
+  }
+
+  .descripcionTecnologias {
+    width: 95%;
+    justify-content: center;
+    text-align: justify;
+    padding: 10px;
+  }
+
+  #cardhtml {
+
+    box-shadow: 0px 0px 10px 3px rgb(255, 123, 0);
+    background-color:rgba(255, 123, 0, 0.333)
+  }
+
+  #cardcss {
+
+    box-shadow: 0px 0px 10px 3px rgb(0, 162, 255);
+    background-color:rgb(0, 162, 255 , 0.333);
+  }
+
+  #cardjs {
+
+    box-shadow: 0px 0px 10px 3px rgb(228, 213, 3);
+    background-color: rgb(228, 213, 3, 0.333);
+  }
+
+  #cardhtml:hover {
+
+    box-shadow: 0px 0px 10px 10px rgb(255, 123, 0);
+  }
+
+  #cardcss:hover {
+
+    box-shadow: 0px 0px 10px 10px rgb(0, 162, 255);
+  }
+
+  #cardjs:hover {
+
+    box-shadow: 0px 0px 10px 10px rgb(228, 213, 3);
+  }
+  
+  .btnLenguajes{
+    color: black;
+    text-align: center;
+    padding:10px;
+    width:85%;
+    margin: 0 auto;
+    border-radius:10px;
+  }
+ 
+  #btnhtml{
+    background-color: rgb(255, 123, 0);
+  }
+  #btncss{
+    background-color: rgb(0, 162, 255);
+  }
+  #btnjs{
+    background-color: rgb(228, 213, 3);
+  }
+
+  
+  
+  
+  #footer {
+    margin-top: 150px;
+    background-color: lightgray;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:699px) {
+
+
+  #header {
+    color: rgb(255, 255, 255);
+    background-color: rgb(52, 152, 219);
+    font-family: sans-serif, Verdana, Geneva, Tahoma, sans-serif;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    box-shadow: 0px 0px 15px 1px black;
+    justify-content: space-between;
+  }
+
+  #titulo-header {
+    margin-top: 15px;
+  }
+
+  #nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    text-decoration: none;
+    gap: 30px;
+    margin-top: 20px;
+    margin-bottom: 16px;
+  }
+
+  .a-menu,
+  .a-menu::before,
+  a.a-menu::selection {
+    color: rgb(230, 215, 215);
+    text-decoration: none;
+  }
+
+  a:hover {
+    color: white;
+  }
+
+
+  section {
+    font-family: arial;
+    margin-top: 50px;
+  }
+
+  .articulo-introduccion {
+    background-color: white;
+  }
+
+  #tituloIntroduccion {
+    color: rgb(52, 152, 219);
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  #pIntroduccion {
+    padding: 50px;
+    text-align: justify;
+  }
+
+
 }
