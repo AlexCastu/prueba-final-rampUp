@@ -5,7 +5,9 @@
 #wrapper {
     background-color: rgb(248, 249, 249);
   }
-
+main{
+    padding-top: 150px;
+}
 @media (min-width:700px) {
       
       #header {
