@@ -3,13 +3,10 @@
   padding: 0;
 }
 
-
-
 #main {
   padding-top: 150px;
 }
 
-@media (min-width:700px) {
 
   #header {
     height: 100px;
@@ -23,7 +20,6 @@
     width: 100%;
     box-shadow: 0px 0px 15px 1px black;
     justify-content: space-between;
-
   }
 
   #titulo-header {
@@ -36,7 +32,7 @@
     justify-content: space-evenly;
     text-decoration: none;
     gap: 30px;
-    backdrop-filter: none;
+   
   }
 
   #nav-ul {
@@ -58,7 +54,6 @@
     font-family: arial;
     margin-top: 5px;
     margin-top: 50px;
-
   }
 
   #containerFondo {
@@ -83,9 +78,9 @@
     gap: 50px 50px;
     padding: 50px;
     min-height: 300px;
+    -webkit-backdrop-filter: blur(4px);
     backdrop-filter: blur(4px);
   }
-
 
   #tituloIntroduccion {
     color: rgb(255, 255, 255);
@@ -101,12 +96,10 @@
     color: white;
   }
 
-
-
   .cardsContainer {
     margin-top: 150px;
     padding-top: 50px;
-    padding-bottom: 50px;
+    padding: 50px;
     display: flex;
     flex-direction: column;
     background-color: rgba(247, 247, 247, 0.808);
@@ -122,7 +115,7 @@
     color: rgb(52, 152, 219);
   }
 
-  .tituloLenguajes{
+  .tituloLenguajes {
     text-align: center;
     color: rgb(3, 4, 5);
   }
@@ -144,13 +137,16 @@
     min-width: 300px;
     box-shadow: 0px 0px 10px 0px gray;
     padding: 10px;
-    gap: 30px;
+    gap: 20px;
   }
 
   .imagenTecnologias {
+    width: 100%;
+    height: auto;
     max-width: 500px;
     border-bottom: 1px solid gray;
-    padding: 10px;
+    justify-items: center;
+    padding-bottom: 10px;
   }
 
   .descripcionTecnologias {
@@ -161,101 +157,106 @@
   }
 
   #cardhtml {
-
     box-shadow: 0px 0px 10px 3px rgb(255, 123, 0);
-    background-color:rgba(255, 123, 0, 0.333)
+    background-color: rgba(255, 123, 0, 0.333);
   }
 
   #cardcss {
-
     box-shadow: 0px 0px 10px 3px rgb(0, 162, 255);
-    background-color:rgb(0, 162, 255 , 0.333);
-  }
-
-  #cardjs {
-
-    box-shadow: 0px 0px 10px 3px rgb(228, 213, 3);
-    background-color: rgb(228, 213, 3, 0.333);
+    background-color: rgb(0, 162, 255, 0.333);
   }
 
   #cardhtml:hover {
-
     box-shadow: 0px 0px 10px 10px rgb(255, 123, 0);
   }
 
   #cardcss:hover {
-
     box-shadow: 0px 0px 10px 10px rgb(0, 162, 255);
   }
 
-  #cardjs:hover {
-
-    box-shadow: 0px 0px 10px 10px rgb(228, 213, 3);
+  .detalles{
+    text-align: center;
   }
-  
-  .btnLenguajes{
+
+  .btnLenguajes {
     color: black;
     text-align: center;
-    padding:10px;
-    width:85%;
+    padding: 10px;
+    width: 85%;
     margin: 0 auto;
-    border-radius:10px;
-  }
- 
-  #btnhtml{
-    background-color: rgb(255, 123, 0);
-  }
-  #btncss{
-    background-color: rgb(0, 162, 255);
-  }
-  #btnjs{
-    background-color: rgb(228, 213, 3);
+    border-radius: 10px;
   }
 
+  #btnhtml {
+    background-color: rgb(255, 123, 0);
+    color: white;
+  }
+  #btncss {
+    background-color: rgb(0, 162, 255);
+    color: white;
+  }
+  #btnhtml:hover {
+    background-color: rgb(255, 123, 0);
+    box-shadow: 0px 0px 5px 5px white;
+    color: white;
+  }
+  #btncss:hover {
+    background-color: rgb(0, 162, 255);
+    box-shadow: 0px 0px 5px 5px white;
+    color: white;
+  }
+
+.aside{
+  margin-top: 150px;
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(240, 240, 240);
+  gap: 50px;
+  box-shadow: 0px 0px 10px 10px lightgray;
   
-  
-  
+}
+#sponsor{
+text-align: center;
+margin-top: 50px;
+color: rgb(52, 152, 219);
+font-size: 2rem;
+}
+
+#sponsors{
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: space-around;
+padding: 2px;
+margin-bottom: 50px;
+}
+
+.encapsulamieto{
+width: 40%;
+
+}
+
+#theBridgeLogo{
+  width: 100%;
+  background-color: rgb(35, 26, 53);
+  background-size: cover;
+}
+#indraLOGO{
+ width: 100%;
+}
+
+
   #footer {
     margin-top: 150px;
     background-color: lightgray;
   }
-}
 
 
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-@media (max-width:699px) {
-
-
+@media (max-width: 699px) {
   #header {
     color: rgb(255, 255, 255);
     background-color: rgb(52, 152, 219);
@@ -294,7 +295,6 @@
     color: white;
   }
 
-
   section {
     font-family: arial;
     margin-top: 50px;
@@ -314,6 +314,4 @@
     padding: 50px;
     text-align: justify;
   }
-
-
 }

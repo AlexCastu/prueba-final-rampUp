@@ -1,87 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
 
-<head>
-  <meta charset="UTF-8" />
+    <title>Prueba final del Ramp-Up</title>
+    <link rel="stylesheet" href="CSS/style.css" />
+  </head>
 
-  <title>Prueba final del Ramp-Up</title>
-  <link rel="stylesheet" href="CSS/style.css" />
-</head>
-
-<body>
-  <div id="wrapper">
-    <header id="header">
-      <h1 id="titulo-header">Prueba final del Ramp-Up</h1>
-      <nav id="nav">
-        <ul id="nav-ul">
-          <li>
-            <a class="a-menu" href="">Biografia</a>
-          </li>
-          <li>
-            <a class="a-menu" href="galeria.html">Galeria</a>
-          </li>
-          <li>
-            <a class="a-menu" href="contancto.html">Contacto</a>
-          </li>
-        </ul>
-      </nav>
-    </header>
-    <main id="main">
-      <section class="background">
-        <div id="containerFondo">
-          <article class="articuloIntroduccion">
-            <div class="blur">
-              <h2 id="tituloIntroduccion">Introduccion</h2>
-              <p id="spanIntroduccion">Esta pagina ha sido creada con el poposito de englobar todos los conocimiento
-                adquiridos en el RampUp del Boot Camp de <b> TheBridge </b> en colaboracion con Indra.
-                Se ha intentando plasmar en el trabajo todos los conocimientos adquiridos en esta fase.
-              </p>
-            </div>
-          </article>
-        </div>
-
-
-        <div class="cardsContainer">
-          <h2 class="tituloTecnologias">Tecnologias aprendidas</h2>
-          <div class="cards">
-            <article class="card" id="cardhtml">
-              <h3 class="tituloLenguajes">HTML5</h3>
-              <img class="imagenTecnologias" src="/img/html.png" alt="imagen de html5">
-              <p class="descripcionTecnologias">En esta primera parte del curso aprendimos HTML5,el HTML5 es un lenguaje
-                de etiquetas, utilizado para
-                la estructuración y la presentación de contenido en los sitios web</p>
-              <a class="btnLenguajes" href="" id="btnhtml">
-                <p>Mas informacion sonbre HTML5</p>
-              </a>
-            </article>
-            <article class="card" id="cardcss">
-              <h3 class="tituloLenguajes">CSS 3</h3>
-              <img class="imagenTecnologias" src="/img/css.png" alt="imagen de css3">
-              <p class="descripcionTecnologias">Tambien vimos CSS,es un lenguaje informático que especifica cómo se
-                presentan los documentos a los
-                usuarios: cómo se diseñan, compaginan, etc. </p>
-              <a class="btnLenguajes" href=""id="btncss">
-                <p>Mas informacion sonbre CSS3</p>
-              </a>
-            </article>
-            <article class="card" id="cardjs">
-              <h3 class="tituloLenguajes">Proximamente... JS</h3>
-              <img class="imagenTecnologias" src="/img/js.svg" alt="imagen de css3">
-              <p class="descripcionTecnologias">Tambien vimos CSS,es un lenguaje informático que especifica cómo se
-                presentan los documentos a los
-                usuarios: cómo se diseñan, compaginan, etc. </p>
-              <a class="btnLenguajes" id="btnjs" href="">
-                <p>Mas informacion sonbre JS</p>
-              </a>
+  <body>
+    <div id="wrapper">
+      <header id="header">
+        <h1 id="titulo-header">Prueba final del Ramp-Up</h1>
+        <nav id="nav">
+          <ul id="nav-ul">
+            <li>
+              <a class="a-menu" href="">Biografia</a>
+            </li>
+            <li>
+              <a class="a-menu" href="galeria.html">Galeria</a>
+            </li>
+            <li>
+              <a class="a-menu" href="contancto.html">Contacto</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <main id="main">
+        <section class="background">
+          <div id="containerFondo">
+            <article class="articuloIntroduccion">
+              <div class="blur">
+                <h2 id="tituloIntroduccion">Introduccion</h2>
+                <p id="spanIntroduccion">
+                  Esta pagina ha sido creada con el poposito de englobar todos
+                  los conocimiento adquiridos en el RampUp del Boot Camp de
+                  <b> TheBridge </b> en colaboracion con Indra. Se ha intentando
+                  plasmar en el trabajo todos los conocimientos adquiridos en
+                  esta fase.
+                </p>
+              </div>
             </article>
           </div>
-        </div>
-      </section>
-    </main>
-    <footer id="footer">
-      aqui algo
-    </footer>
-  </div>
-</body>
 
+          <div class="cardsContainer">
+            <h2 class="tituloTecnologias">
+              Tecnologias aprendidas en esta etapa
+            </h2>
+            <div class="cards">
+              <article class="card" id="cardhtml">
+                <h3 class="tituloLenguajes">HTML5</h3>
+                <img
+                  class="imagenTecnologias"
+                  src="/img/html.png"
+                  alt="imagen de html5"
+                />
+                <details class="detalles">
+                  <p class="descripcionTecnologias">
+                    En esta primera parte del curso aprendimos HTML5,el HTML5 es
+                    un lenguaje de etiquetas, utilizado para la estructuración y
+                    la presentación de contenido en los sitios web
+                  </p>
+                </details>
+                <a class="btnLenguajes" href="" id="btnhtml">
+                  <p>Mas informacion sonbre HTML5</p>
+                </a>
+              </article>
+              <article class="card" id="cardcss">
+                <h3 class="tituloLenguajes">CSS 3</h3>
+                <img
+                  class="imagenTecnologias"
+                  src="/img/css.png"
+                  alt="imagen de css3"
+                />
+                <details class="detalles">
+                  <p class="descripcionTecnologias">
+                    Tambien vimos CSS,es un lenguaje informático que especifica
+                    cómo se presentan los documentos a los usuarios: cómo se
+                    diseñan, compaginan, etc.
+                  </p>
+                </details>
+                <a class="btnLenguajes" href="" id="btncss">
+                  <p>Mas informacion sonbre CSS3</p>
+                </a>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <aside class="aside">
+          <h2 id="sponsor">Patrocinadores</h2>
+          <div id="sponsors">
+            <div class="encapsulamieto">
+              <a href="https://www.thebridge.tech"
+                ><img
+                  id="theBridgeLogo"
+                  src="img/theBridge.svg"
+                  alt="Enlace que nos lleva a la web de TheBridge"
+              /></a>
+            </div>
+
+            <div class="encapsulamieto">
+              <a href="https://www.indracompany.com"
+                ><img
+                id="indraLOGO"
+                  src="img/indra.png"
+                  alt="Enlace que nos lleva a la web de INDRA"
+              /></a>
+            </div>
+          </div>
+        </aside>
+      </main>
+      <footer id="footer">aqui algo</footer>
+    </div>
+  </body>
 </html>
