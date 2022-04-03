@@ -261,7 +261,7 @@ section {
 }
 
 
-@media (min-width: 512px) {
+@media (min-width: 550px) {
 
   #header {
     height: 100px;
@@ -335,7 +335,7 @@ section {
 
 }
 
-@media (max-width: 512px) {
+@media (max-width: 550px) {
 
   #header {
     height: 100px;
