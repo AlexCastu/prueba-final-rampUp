@@ -7,20 +7,269 @@
   padding-top: 150px;
 }
 
+#header {
+  color: rgb(255, 255, 255);
+  background-color: rgb(52, 152, 219);
+  font-family: sans-serif, Verdana, Geneva, Tahoma, sans-serif;
+  position: fixed;
+  z-index: 100;
+  box-shadow: 0px 0px 15px 1px black;
+}
 
-@media (min-width: 700px) {
+#containerFondo {
+  background-image: url("/img/peakpx.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0 0 10px 5px gray;
+}
+
+.blur {
+  background-color: rgba(52, 152, 219, 0.726);
+  padding: 40px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 3px 5px rgba(52, 152, 219, 0.726);
+}
+
+#footer {
+  margin-top: 150px;
+  padding-top: 100px;
+  background-color: #2E2E2E;
+  display: flex;
+  flex-direction: column;
+}
+
+#footerArriba {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 50px;
+  gap: 50px;
+}
+
+#ulFooter {
+  display: flex;
+  width: 80%;
+  justify-content: space-between;
+  list-style: none;
+}
+
+.aFooter,
+.aFooter::before,
+a.aFooter::selection,
+.a-menu,
+.a-menu::before,
+a.a-menu::selection {
+  color: rgb(231, 230, 230);
+  text-decoration: none;
+}
+
+.aFooter:hover {
+  color: white;
+}
+
+.aFooter,
+.a-menu:hover {
+  color: rgb(255, 255, 255);
+}
+
+section {
+  font-family: arial;
+}
+
+.articuloIntroduccion {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  -webkit-backdrop-filter: blur(4px);
+  backdrop-filter: blur(4px);
+}
+
+#tituloIntroduccion {
+  color: rgb(255, 255, 255);
+  margin-bottom: 30px;
+  text-align: center;
+  font-family: sans-serif;
+  font-size: 2.5em;
+}
+
+#spanIntroduccion {
+  text-align: justify;
+  color: white;
+}
+
+.cardsContainer {
+  margin-top: 150px;
+  padding-top: 50px;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(247, 247, 247, 0.808);
+  box-shadow: 0px 0px 10px 5px lightgray;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 40px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 10px;
+  max-width: 500px;
+  min-width: 300px;
+  box-shadow: 0px 0px 10px 0px gray;
+  padding: 10px;
+  gap: 20px;
+}
+
+.imagenTecnologias {
+  width: 100%;
+  height: auto;
+  max-width: 500px;
+  border-bottom: 1px solid gray;
+  justify-items: center;
+  padding-bottom: 10px;
+}
+
+.descripcionTecnologias {
+  width: 95%;
+  justify-content: center;
+  text-align: justify;
+  padding: 10px;
+}
+
+.aside {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(240, 240, 240);
+  gap: 50px;
+  box-shadow: 0px 0px 10px 10px lightgray;
+}
+
+#theBridgeLogo {
+  width: 100%;
+  background-color: rgb(35, 26, 53);
+  background-size: cover;
+}
+
+#indraLOGO {
+  width: 100%;
+}
+
+#tituloFooter {
+  color: lightgray;
+  font-family: monospace;
+}
+
+#footerAbajo {
+  display: flex;
+  background-color: black;
+  justify-content: center;
+  font-family: monospace;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  color: white;
+}
+
+#sponsor {
+  text-align: center;
+  margin-top: 50px;
+  color: rgb(52, 152, 219);
+  font-size: 2rem;
+  font-family: sans-serif;
+}
+
+#cardhtml {
+  box-shadow: 0px 0px 10px 3px rgb(255, 123, 0);
+  background-color: rgba(255, 123, 0, 0.333);
+}
+
+#cardcss {
+  box-shadow: 0px 0px 10px 3px rgb(0, 162, 255);
+  background-color: rgb(0, 162, 255, 0.333);
+}
+
+#cardhtml:hover {
+  box-shadow: 0px 0px 10px 10px rgb(255, 123, 0);
+}
+
+#cardcss:hover {
+  box-shadow: 0px 0px 10px 10px rgb(0, 162, 255);
+}
+
+.detalles {
+  text-align: center;
+  text-align: justify;
+}
+
+.detalles>summary {
+  text-align: center;
+  font-size: 1.2em;
+  color: gray;
+}
+
+.btnLenguajes {
+  color: black;
+  text-align: center;
+  padding: 10px;
+  width: 85%;
+  margin: 0 auto;
+  border-radius: 10px;
+}
+
+.tituloTecnologias {
+  text-align: center;
+  margin-bottom: 150px;
+  margin-top: 50px;
+  font-size: 3em;
+  font-weight: 200;
+  color: rgb(52, 152, 219);
+}
+
+.tituloLenguajes {
+  text-align: center;
+  font-family: monospace;
+  font-size: 1.8em;
+  color: rgb(49, 49, 49);
+}
+
+#btnhtml {
+  background-color: rgb(255, 123, 0);
+  color: white;
+}
+
+#btncss {
+  background-color: rgb(0, 162, 255);
+  color: white;
+}
+
+#btnhtml:hover {
+  background-color: rgb(255, 123, 0);
+  box-shadow: 0px 0px 5px 5px white;
+  color: white;
+}
+
+#btncss:hover {
+  background-color: rgb(0, 162, 255);
+  box-shadow: 0px 0px 5px 5px white;
+  color: white;
+}
+
+
+@media (min-width: 512px) {
 
   #header {
     height: 100px;
     line-height: 100px;
-    color: rgb(255, 255, 255);
-    background-color: rgb(52, 152, 219);
-    font-family: sans-serif, Verdana, Geneva, Tahoma, sans-serif;
     position: fixed;
     z-index: 100;
     display: flex;
     width: 100%;
-    box-shadow: 0px 0px 15px 1px black;
     justify-content: space-between;
   }
 
@@ -34,198 +283,41 @@
     justify-content: space-evenly;
     text-decoration: none;
     gap: 30px;
-
   }
 
   #nav-ul {
     margin-right: 20px;
   }
 
-  .a-menu,
-  .a-menu::before,
-  a.a-menu::selection {
-    color: rgb(231, 230, 230);
-    text-decoration: none;
-  }
-
-  .a-menu:hover {
-    color: white;
+  #menuIndex {
+    font-size: 1.1em;
   }
 
   section {
-    font-family: arial;
-    margin-top: 5px;
     margin-top: 50px;
   }
 
-  #containerFondo {
-    background-image: url("/img/peakpx.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    box-shadow: 0 0 10px 5px gray;
-  }
-
-  .blur {
-    background-color: rgba(52, 152, 219, 0.726);
-    padding: 40px;
-    border-radius: 5px;
-    box-shadow: 0px 0px 3px 5px rgba(52, 152, 219, 0.726);
-  }
-
   .articuloIntroduccion {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     gap: 50px 50px;
     padding: 50px;
     min-height: 300px;
-    -webkit-backdrop-filter: blur(4px);
-    backdrop-filter: blur(4px);
   }
 
   #tituloIntroduccion {
-    color: rgb(255, 255, 255);
     margin-bottom: 40px;
-    text-align: center;
-    font-family: sans-serif;
     font-size: 3em;
   }
 
   #spanIntroduccion {
-    text-align: justify;
     font-size: 1.5em;
-    color: white;
-  }
-
-  .cardsContainer {
-    margin-top: 150px;
-    padding-top: 50px;
-    padding: 50px;
-    display: flex;
-    flex-direction: column;
-    background-color: rgba(247, 247, 247, 0.808);
-    box-shadow: 0px 0px 10px 5px lightgray;
-  }
-
-  .tituloTecnologias {
-    text-align: center;
-    margin-bottom: 150px;
-    margin-top: 50px;
-    font-size: 3em;
-    font-weight: 200;
-    color: rgb(52, 152, 219);
-  }
-
-  .tituloLenguajes {
-    text-align: center;
-    color: rgb(3, 4, 5);
-  }
-
-  .cards {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    gap: 40px 40px;
   }
 
   .card {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    border-radius: 10px;
     width: 30%;
-    max-width: 500px;
-    min-width: 300px;
-    box-shadow: 0px 0px 10px 0px gray;
-    padding: 10px;
-    gap: 20px;
-  }
-
-  .imagenTecnologias {
-    width: 100%;
-    height: auto;
-    max-width: 500px;
-    border-bottom: 1px solid gray;
-    justify-items: center;
-    padding-bottom: 10px;
-  }
-
-  .descripcionTecnologias {
-    width: 95%;
-    justify-content: center;
-    text-align: justify;
-    padding: 10px;
-  }
-
-  #cardhtml {
-    box-shadow: 0px 0px 10px 3px rgb(255, 123, 0);
-    background-color: rgba(255, 123, 0, 0.333);
-  }
-
-  #cardcss {
-    box-shadow: 0px 0px 10px 3px rgb(0, 162, 255);
-    background-color: rgb(0, 162, 255, 0.333);
-  }
-
-  #cardhtml:hover {
-    box-shadow: 0px 0px 10px 10px rgb(255, 123, 0);
-  }
-
-  #cardcss:hover {
-    box-shadow: 0px 0px 10px 10px rgb(0, 162, 255);
-  }
-
-  .detalles {
-    text-align: center;
-  }
-
-  .btnLenguajes {
-    color: black;
-    text-align: center;
-    padding: 10px;
-    width: 85%;
-    margin: 0 auto;
-    border-radius: 10px;
-  }
-
-  #btnhtml {
-    background-color: rgb(255, 123, 0);
-    color: white;
-  }
-
-  #btncss {
-    background-color: rgb(0, 162, 255);
-    color: white;
-  }
-
-  #btnhtml:hover {
-    background-color: rgb(255, 123, 0);
-    box-shadow: 0px 0px 5px 5px white;
-    color: white;
-  }
-
-  #btncss:hover {
-    background-color: rgb(0, 162, 255);
-    box-shadow: 0px 0px 5px 5px white;
-    color: white;
   }
 
   .aside {
     margin-top: 150px;
-    display: flex;
-    flex-direction: column;
-    background-color: rgb(240, 240, 240);
-    gap: 50px;
-    box-shadow: 0px 0px 10px 10px lightgray;
-
-  }
-
-  #sponsor {
-    text-align: center;
-    margin-top: 50px;
-    color: rgb(52, 152, 219);
-    font-size: 2rem;
   }
 
   #sponsors {
@@ -239,43 +331,19 @@
 
   .encapsulamieto {
     width: 40%;
-
-  }
-
-  #theBridgeLogo {
-    width: 100%;
-    background-color: rgb(35, 26, 53);
-    background-size: cover;
-  }
-
-  #indraLOGO {
-    width: 100%;
-  }
-
-
-  #footer {
-    margin-top: 150px;
-    background-color: lightgray;
   }
 
 }
 
-
-
-
-@media (max-width: 699px) {
+@media (max-width: 512px) {
 
   #header {
     height: 100px;
-    color: rgb(255, 255, 255);
-    background-color: rgb(52, 152, 219);
-    font-family: sans-serif, Verdana, Geneva, Tahoma, sans-serif;
     position: fixed;
     z-index: 100;
     display: flex;
     flex-direction: column;
     width: 100%;
-    box-shadow: 0px 0px 15px 1px black;
     justify-content: center;
     column-gap: 20px;
   }
@@ -292,72 +360,23 @@
     justify-content: space-evenly;
     text-decoration: none;
     gap: 0px 20px;
-
-  }
-
-  .a-menu,
-  .a-menu::before,
-  a.a-menu::selection {
-    color: rgb(231, 230, 230);
-    text-decoration: none;
-  }
-
-  .a-menu:hover {
-    color: white;
   }
 
   section {
-    font-family: arial;
-    margin-top: 5px;
-    margin-top: 25px;
-  }
-
-  #containerFondo {
-    background-image: url("/img/peakpx.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    box-shadow: 0 0 10px 5px gray;
-  }
-
-  .blur {
-    background-color: rgba(52, 152, 219, 0.726);
-    padding: 40px;
-    border-radius: 5px;
-    box-shadow: 0px 0px 3px 5px rgba(52, 152, 219, 0.726);
+    margin-top: 30px;
   }
 
   .articuloIntroduccion {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     padding: 20px;
-    -webkit-backdrop-filter: blur(4px);
-    backdrop-filter: blur(4px);
   }
 
   #tituloIntroduccion {
-    color: rgb(255, 255, 255);
     margin-bottom: 30px;
-    text-align: center;
-    font-family: sans-serif;
     font-size: 2.5em;
   }
 
   #spanIntroduccion {
-    text-align: justify;
     font-size: 1.2em;
-    color: white;
-  }
-
-  .cardsContainer {
-    margin-top: 100px;
-    padding-top: 50px;
-    padding: 50px;
-    display: flex;
-    flex-direction: column;
-    background-color: rgba(247, 247, 247, 0.808);
-    box-shadow: 0px 0px 10px 5px lightgray;
   }
 
   .tituloTecnologias {
@@ -365,116 +384,14 @@
     margin-bottom: 100px;
     margin-top: 20px;
     font-size: 2em;
-    font-weight: 200;
-    color: rgb(52, 152, 219);
-  }
-
-  .tituloLenguajes {
-    text-align: center;
-    color: rgb(3, 4, 5);
-  }
-
-  .cards {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    gap: 40px;
   }
 
   .card {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    border-radius: 10px;
     width: 95%;
-    max-width: 500px;
-    min-width: 300px;
-    box-shadow: 0px 0px 10px 0px gray;
-    padding: 10px;
-    gap: 20px;
-  }
-
-  .imagenTecnologias {
-    width: 100%;
-    height: auto;
-    max-width: 500px;
-    border-bottom: 1px solid gray;
-    justify-items: center;
-    padding-bottom: 10px;
-  }
-
-  #cardhtml {
-    box-shadow: 0px 0px 10px 3px rgb(255, 123, 0);
-    background-color: rgba(255, 123, 0, 0.333);
-  }
-
-  #cardcss {
-    box-shadow: 0px 0px 10px 3px rgb(0, 162, 255);
-    background-color: rgb(0, 162, 255, 0.333);
-  }
-
-  #cardhtml:hover {
-    box-shadow: 0px 0px 10px 10px rgb(255, 123, 0);
-  }
-
-  #cardcss:hover {
-    box-shadow: 0px 0px 10px 10px rgb(0, 162, 255);
-  }
-
-  .detalles {
-    text-align: justify;
-  }
-
-  .detalles>summary {
-    text-align: center;
-    font-size: 1.2em;
-    color: gray;
-  }
-
-  .detalles p {
-    padding: 20px;
-  }
-
-
-  .btnLenguajes {
-    color: black;
-    text-align: center;
-    padding: 10px;
-    width: 85%;
-    margin: 0 auto;
-    border-radius: 10px;
-  }
-
-  #btnhtml {
-    background-color: rgb(255, 123, 0);
-    color: white;
-  }
-
-  #btncss {
-    background-color: rgb(0, 162, 255);
-    color: white;
-  }
-
-  #btnhtml:hover {
-    background-color: rgb(255, 123, 0);
-    box-shadow: 0px 0px 5px 5px white;
-    color: white;
-  }
-
-  #btncss:hover {
-    background-color: rgb(0, 162, 255);
-    box-shadow: 0px 0px 5px 5px white;
-    color: white;
   }
 
   .aside {
     margin-top: 100px;
-    display: flex;
-    flex-direction: column;
-    background-color: rgb(240, 240, 240);
-    gap: 50px;
-    box-shadow: 0px 0px 10px 10px lightgray;
-
   }
 
   #sponsor {
@@ -495,23 +412,5 @@
   .encapsulamieto {
     width: 90%;
   }
-
-  #theBridgeLogo {
-    width: 100%;
-    background-color: rgb(35, 26, 53);
-    background-size: cover;
-  }
-
-  #indraLOGO {
-    width: 100%;
-  }
-
-
-  #footer {
-    margin-top: 150px;
-    background-color: lightgray;
-  }
-
-
 
 }
