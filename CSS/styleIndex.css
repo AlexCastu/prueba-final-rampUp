@@ -4,6 +4,7 @@
   background-image: url("/img/fondo.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  background-attachment: fixed;
   background-position: center;
   box-shadow: 0 0 5px 2px rgb(52, 152, 219);
 }
@@ -37,7 +38,11 @@ section {
 #spanIntroduccion {
   text-align: center;
   color: rgb(255, 255, 255);
+  text-overflow: ellipsis;
+  
 }
+
+
 
 .cardsContainer {
   margin-top: 150px;
