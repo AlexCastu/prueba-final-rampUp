@@ -1,5 +1,9 @@
 
 
+#main{
+  padding-top: 150px;
+}
+
 #containerFondo {
   background-image: url("/img/fondo.jpg");
   background-repeat: no-repeat;
