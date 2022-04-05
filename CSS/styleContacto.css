@@ -1,0 +1,162 @@
+#footer::before {
+  margin: 0px;
+  padding: 0px;
+}
+.wrapperContacto {
+  background-image: url(../img/fondoContacto.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+#main {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background-color: rgba(52, 152, 219, 0.65);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 100px;
+}
+.fondoConctacto {
+  background-color: rgba(255, 255, 255, 0.9);
+  width: 70%;
+  padding-bottom: 50px;
+  margin-top: 150px;
+  border: 1px solid white;
+  border-radius: 5px;
+  padding-top: 50px;
+}
+.articuloFormulario {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#tituloFormulario {
+  margin-bottom: 50px;
+  font-size: 2em;
+  font-weight: 300;
+  color: rgb(0, 153, 255);
+  font-family: sans-serif, "Courier New", Courier, monospace;
+}
+.listaFormulario {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+  font-family: sans-serif, "Franklin Gothic Medium", "Arial Narrow", Arial,
+    sans-serif;
+}
+
+.liFormularioContacto {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: rgba(156, 43, 43, 0.76);
+  border-radius: 5px;
+  width: 100%;
+}
+
+.liFormularioContacto label {
+  padding: 10px;
+  text-align: center;
+}
+
+@media (max-width: 576px) {
+  .fondoConctacto {
+    width: 95%;
+    padding-bottom: 50px;
+    margin-top: 75px;
+    padding-top: 50px;
+  }
+  .articuloFormulario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .formulario {
+    width: 90%;
+  }
+  #tituloFormulario {
+    margin-bottom: 50px;
+    font-size: 1.5em;
+    font-weight: 400;
+  }
+  .listaFormulario {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .liFormularioContacto {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    gap: 7px;
+    border-radius: 5px;
+  }
+  .liFormularioContacto input {
+    width: 90%;
+  }
+
+  .liFormularioContacto label {
+    padding: 10px;
+    text-align: center;
+    font-size: 1rem;
+  }
+}
+@media (min-width: 576px) {
+  .fondoConctacto {
+    width: 95%;
+    padding-bottom: 50px;
+    margin-top: 75px;
+    padding-top: 50px;
+  }
+  .articuloFormulario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #tituloFormulario {
+    margin-bottom: 50px;
+    font-size: 2.5em;
+    font-weight: 300;
+  }
+  .listaFormulario {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+  }
+  .liFormularioContacto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    border-radius: 5px;
+  }
+.formulario{
+    width: 80%;
+}
+  .liFormularioContacto label {
+    text-align: center;
+    font-size: 1.2rem;
+  }
+  .liFormularioContacto input {
+    width: 90%;
+  }
+}
+
+@media (min-width: 768px) {
+}
+
+@media (min-width: 992px) {
+}
+
+@media (min-width: 1200px) {
+}
