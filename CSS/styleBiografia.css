@@ -1,4 +1,13 @@
-
+#main{
+    padding-top: 150px;
+}
+.wrraper{
+    background-image:url("../img/fondoIndexBiografia.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+  }
 #tituloBiografia{
     background-color:rgb(235, 235, 235);
     padding: 30px;
@@ -6,6 +15,7 @@
     text-align: center;
     font-size: 3.5rem;
     color: rgb(52, 152, 219);
+    box-shadow: 0px 0px 10px 5px rgb(128, 128, 128);
 }
 
 .section{
@@ -27,9 +37,10 @@
     align-content:center;
     display: flex;
     flex-direction: column;
+    background-color: rgb(255, 255, 255);;
     max-width:600px;
     min-width: 400px;
-    box-shadow: 0px 0px 10px 5px gray;
+    box-shadow: 0px 0px 10px 5px rgb(128, 128, 128);
 }
 
 .tituloArticulos{
@@ -46,7 +57,7 @@
     padding:30px;
 }
 .table th,td{
-    border-bottom:1px solid rgba(52, 152, 219, 0.692); 
+    border-bottom:1px solid rgba(106, 174, 219, 0.836); 
     font-family:sans-serif;
     padding: 20px;
     text-align:left;

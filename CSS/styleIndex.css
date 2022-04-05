@@ -1,22 +1,30 @@
-
-
-#main{
-  padding-top: 150px;
-}
-
-#containerFondo {
-  background-image: url("/img/fondo.jpg");
+#wrapper{
+  background-image:url("../img/fondoIndexBiografia.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
-  box-shadow: 0 0 5px 2px rgb(52, 152, 219);
+}
+
+#main{
+  padding-top: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#containerFondo {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
 }
 
 .blur {
-  background-color: rgba(41, 41, 41, 0.61);
+  background-color:rgb(52, 152, 219);
   padding: 40px;
   border-radius: 5px;
+  box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.733);
 }
 
 section {
@@ -56,6 +64,7 @@ section {
   flex-direction: column;
   background-color: rgba(247, 247, 247, 0.808);
   box-shadow: 0px 0px 10px 5px lightgray;
+  width: 90%;
 }
 
 .cards {
