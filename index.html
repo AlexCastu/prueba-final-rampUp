@@ -2,134 +2,149 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
+    <meta charset="UTF-8" />
 
-  <title>Prueba final del Ramp-Up</title>
-  <link rel="stylesheet" href="CSS/styleIndex.css" />
-  <link rel="stylesheet" href="CSS/headerFooter.css" />
-  <title>Pagina principal RampUp</title>
+    <title>Prueba final del Ramp-Up</title>
+    <link rel="stylesheet" href="CSS/styleIndex.css" />
+    <link rel="stylesheet" href="CSS/headerFooter.css" />
+    <title>Pagina principal RampUp</title>
 </head>
 
 <body>
-  <div id="wrapper">
-    <header id="header">
-      <h1 id="titulo-header">RampUp</h1>
-      <nav id="nav">
-        <ul id="nav-ul">
-          <li> <a class="a-menu" id="menuIndex" href="index.html"><svg xmlns="http://www.w3.org/2000/svg" width="15"
+    <div id="wrapper">
+        <header id="componentHeader">
+            <h1 id="titulo-header">
+                <p id="animacionTitulo">RampUp</p>
+            </h1>
+            <nav id="nav">
+                <ul id="nav-ul">
+                    <li> <a class="a-menu" id="menuIndex" href="index.html"><svg xmlns="http://www.w3.org/2000/svg" width="15"
                 height="15" fill="currentColor" class="bi bi-house" viewBox="0 0 16 16">
                 <path fill-rule="evenodd"
                   d="M2 13.5V7h1v6.5a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5V7h1v6.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5zm11-11V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z" />
                 <path fill-rule="evenodd"
                   d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z" />
-              </svg> Home</a></li>
-          <li>
-            <a class="a-menu" href="./pages/biografia.html">Biografia</a>
-          </li>
-          <li>
-            <a class="a-menu" href="./pages/galeria.html">Galeria</a>
-          </li>
-          <li>
-            <a class="a-menu" href="./pages/contacto.html">Contacto</a>
-          </li>
-        </ul>
-        
-      </nav>
-    </header>
-    <main id="main">
-      <section class="background">
-        <div id="containerFondo">
-          <article class="articuloIntroduccion">
-            <div class="blur">
-              <h2 id="tituloIntroduccion">Introduccion</h2>
-              <p id="spanIntroduccion">
-                Esta pagina ha sido creada con el poposito de englobar todos
-                los conocimiento adquiridos en el RampUp del Boot Camp de
-                <b> TheBridge </b> en colaboracion con <b>Indra</b>. Se ha intentando
-                plasmar en el trabajo todos los conocimientos adquiridos en
-                esta fase.
-              </p>
+              </svg> <span>Home</span>  </a></li>
+                    <li>
+                        <a class="a-menu" href="./pages/biografia.html">
+                            <p>Biografia</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="a-menu" href="./pages/galeria.html">
+                            <p>Galeria</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="a-menu" href="./pages/contacto.html">
+                            <p>Contacto</p>
+                        </a>
+                    </li>
+                </ul>
+
+            </nav>
+        </header>
+        <main id="componentMain">
+            <section class="background">
+                <div id="containerFondo">
+                    <article class="articuloIntroduccion">
+                        <div class="blur">
+                            <h2 id="tituloIntroduccion">
+                                <p>Introduccion</p>
+                            </h2>
+                            <p id="spanIntroduccion">
+                                Esta pagina ha sido creada con el poposito de englobar todos los conocimiento adquiridos en el RampUp del Boot Camp de
+                                <b> TheBridge </b> en colaboracion con <b>Indra</b>. Se ha intentando plasmar en el trabajo todos los conocimientos adquiridos en esta fase.
+                            </p>
+                        </div>
+                    </article>
+                </div>
+            </section>
+            <section class="cardsContainer">
+                <h2 class="tituloTecnologias">
+                    <p>Tecnologias aprendidas en esta etapa</p>
+
+                </h2>
+                <div class="cards">
+                    <article class="card" id="cardhtml">
+                        <h3 class="tituloLenguajes">
+                            <p>HTML5</p>
+                        </h3>
+                        <img class="imagenTecnologias" src="/img/html.png" alt="imagen de html5" />
+                        <details class="detalles">
+                            <summary>Breve descripcion de HTML5</summary>
+                            <p class="descripcionTecnologias">
+                                En esta primera parte del curso aprendimos HTML5,el HTML5 es un lenguaje de etiquetas, utilizado para la estructuración y la presentación de contenido en los sitios web
+                            </p>
+                        </details>
+                        <a class="btnLenguajes" href="" id="btnhtml">
+                            <p>Mas informacion sonbre HTML5</p>
+                        </a>
+                    </article>
+                    <article class="card" id="cardcss">
+                        <h3 class="tituloLenguajes">
+                            <p>CSS 3</p>
+                        </h3>
+                        <img class="imagenTecnologias" src="/img/css.png" alt="imagen de css3" />
+                        <details class="detalles">
+                            <summary>Breve descripcion de CSS3</summary>
+                            <p class="descripcionTecnologias">
+                                Tambiens vimos CSS,es un lenguaje informático que especifica cómo se presentan los documentos a los usuarios: cómo se diseñan, compaginan, etc.
+                            </p>
+                        </details>
+                        <a class="btnLenguajes" href="" id="btncss">
+                            <p>Mas informacion sonbre CSS3</p>
+                        </a>
+                    </article>
+                </div>
+            </section>
+            <aside class="aside">
+                <h2 id="sponsor">Patrocinadores</h2>
+                <div id="sponsors">
+                    <div class="encapsulamieto">
+                        <a href="https://www.thebridge.tech"><img id="theBridgeLogo" src="img/theBridge.svg" alt="Enlace que nos lleva a la web de TheBridge" /></a>
+                    </div>
+
+                    <div class="encapsulamieto">
+                        <a href="https://www.indracompany.com"><img id="indraLOGO" src="img/indra.png" alt="Enlace que nos lleva a la web de INDRA" /></a>
+                    </div>
+                </div>
+            </aside>
+        </main>
+        <footer id="componentFooter">
+            <div id="footerArriba">
+                <h2 id="tituloFooter">
+                    <p>Mapa del sitio</p>
+                </h2>
+                <ul id="ulFooter">
+                    <li>
+                        <a class="aFooter" href="index.html">
+                            <p>Index</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="aFooter" href="./pages/biografia.html">
+                            <p>Biografia</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="aFooter" href="./pages/galeria.html">
+                            <p>Galeria</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="aFooter" href="./pages/contancto.html">
+                            <p>Contacto</p>
+                        </a>
+                    </li>
+                </ul>
             </div>
-          </article>
-        </div>
-      </section>
-      <section class="cardsContainer">
-        <h2 class="tituloTecnologias">
-          Tecnologias aprendidas en esta etapa
-        </h2>
-        <div class="cards">
-          <article class="card" id="cardhtml">
-            <h3 class="tituloLenguajes">HTML5</h3>
-            <img class="imagenTecnologias" src="/img/html.png" alt="imagen de html5" />
-            <details class="detalles">
-              <summary>Breve descripcion de HTML5</summary>
-              <p class="descripcionTecnologias">
-                En esta primera parte del curso aprendimos HTML5,el HTML5 es
-                un lenguaje de etiquetas, utilizado para la estructuración y
-                la presentación de contenido en los sitios web
-              </p>
-            </details>
-            <a class="btnLenguajes" href="" id="btnhtml">
-              <p>Mas informacion sonbre HTML5</p>
-            </a>
-          </article>
-          <article class="card" id="cardcss">
-            <h3 class="tituloLenguajes">CSS 3</h3>
-            <img class="imagenTecnologias" src="/img/css.png" alt="imagen de css3" />
-            <details class="detalles">
-              <summary>Breve descripcion de CSS3</summary>
-              <p class="descripcionTecnologias">
-                Tambiens vimos CSS,es un lenguaje informático que especifica
-                cómo se presentan los documentos a los usuarios: cómo se
-                diseñan, compaginan, etc.
-              </p>
-            </details>
-            <a class="btnLenguajes" href="" id="btncss">
-              <p>Mas informacion sonbre CSS3</p>
-            </a>
-          </article>
-        </div>
-      </section>
-      <aside class="aside">
-      <h2 id="sponsor">Patrocinadores</h2>
-      <div id="sponsors">
-        <div class="encapsulamieto">
-          <a href="https://www.thebridge.tech"><img id="theBridgeLogo" src="img/theBridge.svg"
-              alt="Enlace que nos lleva a la web de TheBridge" /></a>
-        </div>
+            <div id="footerAbajo">
+                <p>Todos los derechos reservados ©2022 Alex Constantin Castu</p>
+            </div>
 
-        <div class="encapsulamieto">
-          <a href="https://www.indracompany.com"><img id="indraLOGO" src="img/indra.png"
-              alt="Enlace que nos lleva a la web de INDRA" /></a>
-        </div>
-      </div>
-      </aside>
-   </main>
-   <footer id="footer">
-    <div id="footerArriba">
-      <h2 id="tituloFooter">Mapa del sitio</h2>
-      <ul id="ulFooter">
-        <li>
-          <a class="aFooter" href="index.html">Index</a>
-        </li>
-        <li>
-          <a class="aFooter" href="./pages/biografia.html">Biografia</a>
-        </li>
-        <li>
-          <a class="aFooter" href="./pages/galeria.html">Galeria</a>
-        </li>
-        <li>
-          <a class="aFooter" href="./pages/contancto.html">Contacto</a>
-        </li>
-      </ul>
+        </footer>
     </div>
-    <div id="footerAbajo">
-      <p>Todos los derechos reservados
-        ©2022 Alex Constantin Castu</p>
-    </div>
-
-    </footer>
-  </div>
 </body>
 
 </html>

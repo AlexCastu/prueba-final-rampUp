@@ -2,7 +2,8 @@
     margin: 0;
     padding: 0;
 }
-#header {
+
+#componentHeader {
     color: rgb(255, 255, 255);
     background-color: rgb(52, 152, 219);
     font-family: sans-serif, Verdana, Geneva, Tahoma, sans-serif;
@@ -10,6 +11,7 @@
     z-index: 100;
     box-shadow: 0px 0px 15px 1px black;
 }
+
 .aFooter,
 .aFooter::before,
 .aFooter::selection,
@@ -29,63 +31,47 @@
     color: rgb(255, 255, 255);
 }
 
-@media (min-width: 550px) {
-
-    #header {
-        height: 100px;
-        line-height: 100px;
-        position: fixed;
-        z-index: 100;
-        display: flex;
-        width: 100%;
-        justify-content: space-between;
-    }
-
-    #titulo-header {
-        margin-left: 20px;
-    }
-
-    #nav ul {
-        list-style: none;
-        display: flex;
-        justify-content: space-evenly;
-        text-decoration: none;
-        gap: 30px;
-    }
-
-    #nav-ul {
-        margin-right: 20px;
-    }
-
-    #menuIndex {
-        font-size: 1.1em;
-    }
-}
 #tituloFooter {
     color: lightgray;
     font-family: monospace;
 }
-#footer {
+
+#animacionTitulo:hover {
+    animation-duration: 2s;
+    animation-name: titulo;
+}
+
+@keyframes titulo {
+    from {
+        color: rgb(3, 3, 3);
+    }
+    to {
+        color: white;
+    }
+}
+
+#componentFooter {
     padding-top: 100px;
     background-color: rgb(52, 152, 219);
     display: flex;
     flex-direction: column;
-  }
-  
-  #footerArriba {
+}
+
+#footerArriba {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-bottom: 50px;
     gap: 50px;
-  }
-  
-  #ulFooter {
+}
+
+#ulFooter {
     display: flex;
     width: 80%;
     justify-content: space-between;
     list-style: none;
-  }
+}
+
 #footerAbajo {
     display: flex;
     background-color: black;
@@ -96,10 +82,8 @@
     color: white;
 }
 
-
 @media (max-width: 549px) {
-
-    #header {
+    #componentHeader {
         height: 100px;
         position: fixed;
         z-index: 100;
@@ -109,18 +93,44 @@
         justify-content: center;
         column-gap: 20px;
     }
-
     #titulo-header {
         margin-top: 5px;
         margin-bottom: 5px;
         text-align: center;
     }
-
     #nav ul {
         list-style: none;
         display: flex;
         justify-content: space-evenly;
         text-decoration: none;
         gap: 0px 20px;
+    }
+}
+
+@media (min-width: 550px) {
+    #componentHeader {
+        height: 100px;
+        line-height: 100px;
+        position: fixed;
+        z-index: 100;
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+    }
+    #titulo-header {
+        margin-left: 20px;
+    }
+    #nav ul {
+        list-style: none;
+        display: flex;
+        justify-content: space-evenly;
+        text-decoration: none;
+        gap: 30px;
+    }
+    #nav-ul {
+        margin-right: 20px;
+    }
+    #menuIndex {
+        font-size: 1.1em;
     }
 }

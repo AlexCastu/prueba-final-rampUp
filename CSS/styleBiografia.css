@@ -1,12 +1,13 @@
-#main {
+#componentMain {
     padding-top: 150px;
 }
 
-#footer {
+#componentFooter {
     margin-top: 150px;
+    ;
 }
 
-.wrraper {
+.wrapper {
     background-image: url("../img/fondoIndexBiografia.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -15,7 +16,7 @@
 }
 
 #tituloBiografia {
-    background-color: rgb(235, 235, 235);
+    background-color: rgba(235, 235, 235, 0.493);
     padding: 30px;
     margin-top: 30px;
     text-align: center;
@@ -23,9 +24,23 @@
     color: rgb(52, 152, 219);
     box-shadow: 0px 0px 10px 5px rgb(128, 128, 128);
     font-family: sans-serif, monospace;
+    animation-name: inicioPagina;
+    animation-duration: 3s;
+    animation-delay: 1;
 }
 
-.section {
+@keyframes inicioPagina {
+    from {
+        box-shadow: 0px 0px 10px 5px rgba(255, 255, 255, 0);
+        background-color: rgba(235, 235, 235, 0);
+        color: white;
+    }
+    to {
+        box-shadow: 0px 0px 10px 5px rgb(128, 128, 128);
+    }
+}
+
+#idSection {
     display: flex;
     flex-direction: column;
 }
@@ -39,17 +54,28 @@
     gap: 50px;
 }
 
-.article {
-    width: 40%;
-    justify-items: center;
-    align-content: center;
+.claseArticle {
     display: flex;
     flex-direction: column;
+    justify-items: center;
+    align-content: center;
     background-color: rgb(255, 255, 255);
-    ;
     max-width: 600px;
     min-width: 400px;
     box-shadow: 0px 0px 10px 5px rgb(128, 128, 128);
+    animation-duration: 4s;
+    animation-name: tablas;
+}
+
+@keyframes tablas {
+    from {
+        background-color: rgba(255, 255, 255, 0);
+        border: none;
+        color: white;
+        background-color: none;
+        box-shadow: 0px 0px 10px 5px rgba(255, 255, 255, 0);
+    }
+    to {}
 }
 
 .tituloArticulos {
@@ -57,24 +83,64 @@
     text-align: center;
     margin-top: 40px;
     color: rgb(52, 152, 219);
+    animation-name: animacionTitulos;
+    animation-duration: 3s;
 }
 
-.table {
+@keyframes animacionTitulos {
+    from {
+        color: rgba(255, 255, 255, 0);
+    }
+}
+
+.tablaDisplay {
     display: flex;
+    flex-direction: row;
     justify-content: center;
+    padding: 20px;
+    animation-name: animacionBorde;
+    animation-duration: 3s;
+}
+
+.tablaDisplay th,
+td {
+    border-bottom: 1px solid rgba(106, 174, 219, 0.836);
+    font-family: sans-serif;
+    padding: 20px;
+    text-align: left;
+    animation-name: animacionBorde;
+    animation-duration: 3s;
+}
+
+@keyframes animacionBorde {
+    from {
+        border-bottom: 1px solid rgba(106, 174, 219, 0);
+        color: rgba(255, 255, 255, 0);
+    }
+}
+
+.tablaHorizontal {
     padding: 30px;
 }
 
-.table th,
-td {
+.tablaHorizontal td {
     border-bottom: 1px solid rgba(106, 174, 219, 0.836);
     font-family: sans-serif;
     padding: 20px;
     text-align: left;
 }
 
+.tablaHorizontal th {
+    padding: 20px;
+    width: 100%;
+    border-bottom: 1px solid gray;
+    text-align: left;
+    animation-name: animacionBorde;
+    animation-duration: 3s;
+}
+
 @media (max-width:500px) {
-    .article {
+    .claseArticle {
         width: 100%;
         max-width: 100%;
         min-width: 100%;
