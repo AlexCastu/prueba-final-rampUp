@@ -155,11 +155,33 @@ section {
 }
 
 #cardhtml:hover {
-    box-shadow: 0px 0px 10px 10px rgb(255, 123, 0);
+    animation: animacionHTML 1.5s infinite;
+}
+
+@keyframes animacionHTML {
+    from {
+        box-shadow: 0px 0px 10px 3px rgb(255, 123, 0);
+        background-color: rgba(255, 123, 0, 0.39);
+    }
+    to {
+        box-shadow: 0px 0px 10px 10px rgb(255, 123, 0);
+        background-color: rgba(255, 123, 0, 0.61);
+    }
 }
 
 #cardcss:hover {
-    box-shadow: 0px 0px 10px 10px rgb(0, 162, 255);
+    animation: animacioncss 1.5s infinite;
+}
+
+@keyframes animacioncss {
+    from {
+        box-shadow: 0px 0px 10px 3px rgb(0, 162, 255);
+        background-color: rgba(0, 162, 255, 0.39);
+    }
+    to {
+        box-shadow: 0px 0px 10px 10px rgb(0, 162, 255);
+        background-color: rgba(0, 162, 255, 0.5);
+    }
 }
 
 .detalles {
