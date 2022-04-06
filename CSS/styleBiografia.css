@@ -13,6 +13,7 @@
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
+    font-family: sans-serif, monospace, 'Courier New', Courier, monospace;
 }
 
 #tituloBiografia {
