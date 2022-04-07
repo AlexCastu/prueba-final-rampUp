@@ -28,7 +28,7 @@ textarea::placeholder {
     text-align: center;
     border: none;
     border-radius: 0px;
-    background-color: rgba(255, 255, 255, 0);
+    background-color: rgba(77, 42, 42, 0);
     border-bottom: 1px solid gray;
     padding-bottom: 4px;
 }
@@ -36,7 +36,7 @@ textarea::placeholder {
 #componentMain {
     padding-top: 100px;
     padding-bottom: 100px;
-    background-color: rgba(52, 152, 219, 0.65);
+    background-color: rgba(0, 153, 255, 0.589);
     display: flex;
     flex-direction: column;
     align-items: center;
