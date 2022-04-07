@@ -62,18 +62,13 @@
               </select>
                             <label for="nombres"></label>
                             <input class="formatoInput" type="text" id="nombres" name="nombres" placeholder="Nombres" required />
-
                             <label for="apellidos"></label>
                             <input class="formatoInput" type="text" id="apellidos" name="apellidos" placeholder="Apellidos" />
-
                             <label for="email"></label>
                             <input class="formatoInput" type="email" id="email" name="email" placeholder="Em@il" />
-
                             <label for="telefono"></label>
-                            <input class="formatoInput" type="tel" id="telefono" name="telefono" placeholder="Telefono" pattern="\([0-9]{3}\) [0-9]{3}[ -][0-9]{4}" title="Ejemplo de telefono: 675676545" required size="9" />
-
+                            <input class="formatoInput" type="tel" id="telefono" name="telefono" placeholder="Telefono" pattern="\([0-9]{9}\)" title="Ejemplo de telefono: 675676545" required size="9" />
                             <textarea name="descripcion" id="descripcion" cols="40" rows="10" maxlength="1000" placeholder="Describe brevemente el motivo de tu contacto si haria falta"></textarea>
-
                             <fieldset class="fieldsetInternos">
                                 <legend>Si eres empresa</legend>
                                 <label for="nombreEmpresa"></label>
